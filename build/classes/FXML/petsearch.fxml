@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="599.0" stylesheets="@../CSSDoc/styel.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetsearchController">
+   <children>
+      <Pane layoutX="1.0" layoutY="68.0" prefHeight="262.0" prefWidth="468.0">
+         <children>
+            <ImageView fitHeight="199.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/pngg.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="search" layoutX="201.0" layoutY="148.0" mnemonicParsing="false" onAction="#search" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="189.0" layoutY="89.0" text="Owner Name :" textFill="#03166b">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="petidtf" layoutX="297.0" layoutY="86.0" onMouseClicked="#reIdtf" />
+            <Label layoutX="64.0" layoutY="166.0" text="Veterinary" textFill="#03166b">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="362.0" layoutY="148.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="66.0" text="Back">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="281.0" layoutY="148.0" mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="66.0" text="Clear">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="34.0" layoutY="27.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="user" layoutX="62.0" layoutY="19.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

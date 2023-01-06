@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="1000.0" stylesheets="@../CSSDoc/styel.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OwnerpageController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="596.0" prefWidth="789.0">
+         <children>
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="34.0" layoutY="28.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="302.0" layoutY="24.0" text="Find a Doctor !" textFill="#001678">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_name" layoutX="62.0" layoutY="19.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <TableView fx:id="doc" layoutX="14.0" layoutY="87.0" onMouseClicked="#slectrow" prefHeight="489.0" prefWidth="526.0">
+              <columns>
+                <TableColumn fx:id="docname" prefWidth="151.199951171875" text="Doctor Name" />
+                  <TableColumn fx:id="docphone" prefWidth="183.2000274658203" text="Doctor Phone" />
+                  <TableColumn fx:id="docemail" prefWidth="191.20001220703125" text="Docter E-mail" />
+              </columns>
+            </TableView>
+            <Label layoutX="553.0" layoutY="217.0" prefHeight="17.0" prefWidth="92.0" text="Doctor_Name" textFill="#001678">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="nametf" layoutX="568.0" layoutY="246.0" prefHeight="25.0" prefWidth="185.0" />
+            <Label layoutX="559.0" layoutY="290.0" prefHeight="17.0" prefWidth="98.0" text="Doctor_Phone" textFill="#001678">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="559.0" layoutY="361.0" prefHeight="17.0" prefWidth="98.0" text="Doctor_email" textFill="#001678">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="emailtf" layoutX="568.0" layoutY="390.0" prefHeight="25.0" prefWidth="185.0" />
+            <TextField fx:id="phonetf" layoutX="568.0" layoutY="319.0" prefHeight="25.0" prefWidth="185.0" />
+            <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="#e3e7ea" height="117.0" layoutX="599.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="139.0" />
+            <Button layoutX="632.0" layoutY="471.0" mnemonicParsing="false" onAction="#choose_doctor" prefHeight="30.0" prefWidth="73.0" text="Choose">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="790.0" prefHeight="597.0" prefWidth="219.0" spacing="30.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" text="Veterinary " textFill="#001579" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/pngg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Button fx:id="addprofile" mnemonicParsing="false" onAction="#addpetprofile" prefHeight="26.0" prefWidth="148.0" text="Add Pet Profile">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="search" mnemonicParsing="false" onAction="#petsearch" prefHeight="26.0" prefWidth="148.0" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="148.0" text="Log out">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="60.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

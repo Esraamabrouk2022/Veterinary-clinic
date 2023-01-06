@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoadingController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="570.0">
+         <children>
+            <Label layoutX="71.0" layoutY="140.0" text="Veterinary " textFill="#03166b">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="148.0" fitWidth="143.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/pngg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="231.0" layoutY="412.0" text="Loading..." textFill="#03166b">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Circle fx:id="c1" fill="#03166b" layoutX="263.0" layoutY="300.0" radius="5.0" strokeType="INSIDE" />
+            <Circle fx:id="c4" fill="#03166b" layoutX="307.0" layoutY="300.0" radius="5.0" strokeType="INSIDE" />
+            <Circle fx:id="c3" fill="#03166b" layoutX="293.0" layoutY="300.0" radius="5.0" strokeType="INSIDE" />
+            <Circle fx:id="c2" fill="#03166b" layoutX="278.0" layoutY="300.0" radius="5.0" strokeType="INSIDE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

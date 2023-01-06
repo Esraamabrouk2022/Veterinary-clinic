@@ -1,0 +1,28 @@
+.lable{
+    -fx-text-fill:#03166b  ;
+}
+
+.button:hover {
+    -fx-background-color:#03166b ;
+    -fx-text-fill:WHITE;
+    -fx-border-radius: 7;
+    -fx-background-radius:7; 
+}
+.button{
+    -fx-background-color:white ;
+    -fx-text-fill:#03166b;
+    -fx-border-color: #03166b;
+    -fx-border-width: 2;
+    -fx-background-radius:7; 
+    -fx-border-radius: 7;
+    
+}
+.rec{
+   -fx-background-color:#03166b,white ;
+    -fx-border-color: #03166b;
+    -fx-border-width: 2;
+   -fx-background-insets: 4,1 0 0 0;
+}
+.comb{
+    -fx-text-fill:white
+}

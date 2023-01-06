@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.doc_control">
+   <children>
+      <TableView fx:id="doc_table" layoutX="25.0" layoutY="25.0" prefHeight="350.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="doc_name" prefWidth="112.00006103515625" text="Doc_Name" />
+          <TableColumn fx:id="doc_email" prefWidth="126.4000244140625" text="Doc_Email" />
+            <TableColumn fx:id="doc_phone" minWidth="4.00006103515625" prefWidth="140.0" text="Doc_Phone" />
+            <TableColumn fx:id="doc_pass" prefWidth="168.0" text="Doc_Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

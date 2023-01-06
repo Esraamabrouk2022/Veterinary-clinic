@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="AnchorPane" alignment="CENTER" prefHeight="600.0" prefWidth="570.0" spacing="30.0" stylesheets="/CSS/Css.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/out1.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Label text="Priceless Treasure" textFill="#03166b">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="160.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="454.0" text="                This app will help you to protect your pet from any illness" textFill="#03166b" />
+            <Label prefHeight="18.0" prefWidth="409.0" text="                            and treat it and follow it until it is cured   " textFill="#03166b" />
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#03166b" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets right="350.0" />
+               </HBox.margin>
+            </Circle>
+            <Button id="third" fx:id="next" mnemonicParsing="false" onAction="#fourth" prefHeight="26.0" prefWidth="61.0" stylesheets="@../CSSDoc/styel.css" text="Next" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

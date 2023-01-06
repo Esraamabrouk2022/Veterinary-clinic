@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="600.0" stylesheets="@../CSSDoc/styel.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <TabPane layoutX="20.0" layoutY="186.0" prefHeight="416.0" prefWidth="559.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="                      Sign In                          ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="23.0" layoutY="57.0" prefHeight="185.0" prefWidth="492.0" stylesheets="@../CSSDoc/styel.css">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.20001220703125" minWidth="10.0" prefWidth="204.79998779296875" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.4000244140625" minWidth="10.0" prefWidth="260.8000122070313" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="66.00000610351563" minHeight="10.0" prefHeight="39.19998474121094" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.600027465820304" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="56.80000000000001" minHeight="10.0" prefHeight="41.59998779296875" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="89.0" text="Username:" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Password:" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Select:" textFill="#03166b" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="combobox" prefHeight="26.0" prefWidth="234.0" promptText="Select Type" style="-fx-text-fill: #ffffff;" styleClass="comb" GridPane.columnIndex="1" />
+                              <TextField fx:id="usernametf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <PasswordField fx:id="passwordtf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" layoutX="27.0" layoutY="269.0" prefHeight="71.0" prefWidth="484.0" spacing="30.0" stylesheets="@../CSSDoc/styel.css">
+                           <children>
+                              <Button fx:id="signin" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="98.0" text="Sign In">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="clear" mnemonicParsing="false" onAction="#clearData" prefHeight="35.0" prefWidth="98.0" text="Clear">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="exit" mnemonicParsing="false" onAction="#exitWind" prefHeight="35.0" prefWidth="98.0" text="Exit">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Line endX="145.0" endY="1.8358230590820312E-5" layoutX="115.0" layoutY="1.0" startX="-107.0" startY="1.8358230590820312E-5" stroke="#03166b" strokeWidth="3.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="                       Sign Up                      ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="253.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="30.0" layoutY="14.0" prefHeight="297.0" prefWidth="478.0" stylesheets="@../CSSDoc/styel.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.20001220703125" minWidth="10.0" prefWidth="213.3999755859375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.6" minWidth="10.0" prefWidth="264.0000244140625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="66.00000610351563" minHeight="10.0" prefHeight="39.19998474121094" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="59.600027465820304" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="56.80000000000001" minHeight="10.0" prefHeight="41.59998779296875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="55.20001220703125" minHeight="10.0" prefHeight="39.20001220703125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="43.199987792968756" minHeight="10.0" prefHeight="39.99998779296874" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.399987792968744" minHeight="10.0" prefHeight="45.600012207031256" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Username:" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Password:" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="E-mail" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="setimage1" mnemonicParsing="false" onAction="#setPhoto" text="Set Image" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Label text="Select:" textFill="#03166b" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="combobox1" onAction="#select" prefHeight="26.0" prefWidth="234.0" promptText="Select Type" style="-fx-text-fill: #ffffff;" styleClass="comb" GridPane.columnIndex="1" />
+                              <Label text="Phone:" textFill="#03166b" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernametf1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="phonetf1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="phototf1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <PasswordField fx:id="passwordtf1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" layoutX="27.0" layoutY="318.0" prefHeight="56.0" prefWidth="484.0" spacing="30.0" stylesheets="@../CSSDoc/styel.css">
+                           <children>
+                              <Button fx:id="signup" mnemonicParsing="false" onAction="#signup" prefHeight="35.0" prefWidth="98.0" text="Sign Up">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="clear1" mnemonicParsing="false" onAction="#clearData1" prefHeight="35.0" prefWidth="98.0" text="Clear">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="exit1" mnemonicParsing="false" onAction="#exitWind" prefHeight="35.0" prefWidth="98.0" text="Exit">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Line endX="194.79998779296875" endY="1.831054760259576E-5" layoutX="318.0" startX="-44.4000244140625" startY="1.831054760259576E-5" stroke="#03166b" strokeWidth="5.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <StackPane layoutX="180.0" layoutY="10.0" prefHeight="166.0" prefWidth="218.0">
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefWidth="78.0" text="Veterinary " textFill="#001579" StackPane.alignment="BOTTOM_CENTER">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="166.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/pngg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.btnaction{
+    -fx-background-radius:15;
+    -fx-background-color: transparent;
+    -fx-border-radius:15;
+    -fx-border-color: #72FFFF;
+    -fx-text-fill:white;
+    -fx-border-width:2;
+}
+
+.btnaction:hover{
+    -fx-background-color:#72FFFF;  
+    -fx-background-radius:15;
+    -fx-border-radius:15;
+    -fx-border-color: #72FFFF;
+    -fx-text-fill:black;
+    -fx-border-width:2;
+}
+
+
+
+
